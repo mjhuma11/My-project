@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: jost, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 4px 6%;
+    
+}
+.topleft{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    animation: blink 2s ease-in-out infinite;
+    border-radius: 50%;
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.navmenu{
+    display: flex;
+}
+.navmenu li a{
+    display: block;
+    color: #ff5100;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 15px;
+    font-weight: 400;
+    transition: all .42s ease;
+    box-sizing: border-box
+    
+}
+.navmenu ul li{
+display: none;
+}
+.navmenu li:hover ul li{
+    display: block;
+    color: #ff8c00;
+    transform: scale(1.1s);
+}
+.navmenu a:hover{
+    color: rgb(199, 211, 34);}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 30px;
+}
+.nav-icons i:hover{
+    transform: scale(1.1);
+    color: #da3152;
+}
+#Menu-icon{
+    font-size: 35px;
+    color: rgb(255, 140, 0);
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/cover.jpg);
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h5{
+    color: rgb(241, 226, 16);
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 300;
+}    
+.main-text h1{
+    color: rgb(241, 226, 16);
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.main-text p{
+    color: rgb(241, 226, 16);
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(16, 32, 15);
+    font-size: 16px;
+    font-weight: 100px;
+    text-transform: capitalize;
+    border: 2px solid rgb(15, 95, 26);
+    padding: 4px 20px;
+    transition: all .42s ease;
+    border-radius: 5px;
+    background-color: greenyellow;
+}
+.main-btn:hover{
+    background-color: rgba(221, 219, 79, 0.651);
+    color: #0c0c0c;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 12px 12px;
+    background-color: yellowgreen;
+}
+.down i:hover{
+    background-color: rgb(4, 107, 10);
+    color: #100572;
+    transition: all .42s ease;
+}
+.center-text h2{
+    color: #0c0c0c;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align:center;
+    margin-bottom: 30px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+}
+.product-card{
+    position: relative;
+    transition: all .40s;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 8px rgba(61, 60, 60, 0.1);
+}
+.product-card img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.product-card img :hover{
+        transform: scale(1.5s);
+    }
+    .product-text h5{
+   position: absolute;
+   top: 13px;
+   left: 13px;
+   color: #fff;
+   font-size: 12px;
+   font-weight: 300;
+   text-transform: uppercase;
+   background-color: #27b737;
+   padding: 3px 10px;
+   border-radius: 2px;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon :hover{
+    color:red;
+}
+.rating{
+    color: #eeff00;
+    font-size: 18px;
+}
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font: weight 300px; 
+}
+.price p{
+    color: #0c0c0c;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact{
+    background-color:rgb(182, 178, 178); 
+    
+    
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-info h4{
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: auto;
+    padding: 5px 5px;
+}
+.first-info img{
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+}
+ .end-text{
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 5px;
+ }
+ .end-text p{
+    color: black;
+    text-transform: capitalize;
+}
+
+.contact-info img {
+    width: 100px; /* Adjust logo size */
+    display: block;
+    margin-left: auto; /* Aligns image to the right */
+}
+
+.contact-info address,
+.contact-info p {
+    margin: 5px 0;
+    color: #333;}
+    
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h3 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 3px solid #312928;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 1.8;
+}
+
+/* Bullet Points */
+ul {
+    list-style: none;
+    padding: 4px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px 0;
+}
+
+/* Contact & Social Links */
+.contact-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #007bff;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+}
+
+.about{
+    background-color: #bdd3ec;
+}
+.product-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2); /* Heart icon grows on hover */
+}
