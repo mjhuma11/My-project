@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchona's women collection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <style>
+        /* Product Grid Styling */
+        .women {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Product Card */
+        .product-card {
+            position: relative;
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Hover Effect */
+        .product-card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        /* Zoom effect on image hover */
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Card Hover Shadow Effect */
+        .product-card:hover {
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Heart Icon Hover Effect */
+        .heart-icon i {
+            font-size: 20px;
+            color: #777;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .heart-icon i:hover {
+            color: red;
+        }
+
+        /* Sale / New Tag */
+        .product-text h5 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="topleft" src="image/logo.jpg" width="80px" alt="Logo"></a>
+            <ul class="navmenu">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+
+                <li> <a href="# ">Products</a>
+                    <ul>
+                        <li> <a href="women.html">Women</a></li>
+                        <li> <a href="Mens collection.html">Men</a></li>
+
+                </li>
+            </ul>
+
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-primary text-white" type="submit">Search</button>
+                </form>
+                <a href="#"><i class='bx bx-user-circle'></i></a>
+                <a href="#"><i class='bx bx-cart'></i></a>
+                <a href="#"><i class='bx bx-menu'></i></a>
+            </div>
+        </header>
+    </div>
+    <div class="women">
+        <div class="product-card">
+            <img src="image/Party_Gown.jpg" width="200px" height="300px" alt="Party Gown">
+            <div class="product-text">
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Desiner Party dress
+                    <br>
+                    Premium quality
+                </h4>
+                <p>BDT-12,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/party -gown01.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Fancy Party Gown</h4>
+                <p>BDT-15,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/three pis.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Gorgeous party dersss</h4>
+                <p>BDT 10,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/kamiz.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Cotton screen print</h4>
+                <p>BDT 4000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/kamiz01.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Women exclusive collection</h4>
+                <p>BDT 8000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/sharee-a-04.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>White jamdani</h4>
+                <p>BDT-18,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/pink sharee.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Fancy Party Sharee</h4>
+                <p>BDT-5,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/bridal saree2.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Bridal sharee</h4>
+                <p>BDT-14,999</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/Bridal Gown2.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Fancy Bridal Gown</h4>
+                <p>BDT-18,900</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/sharee-a-01.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Blue sharee</h4>
+                <p>BDT-9,900</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/kamiz01.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Fancy Party Gown</h4>
+                <p>BDT-3999</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/red sharee.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Fancy Party sharee</h4>
+                <p>BDT-12,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/sharee-a-03.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Pink jamdani</h4>
+                <p>BDT-18,000</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="image/party t-pc.webp" width="200px" height="300px" alt="Fancy Party Gown">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon"><i class='bx bx-heart'></i></div>
+            <div class="rating">
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <div class="price">
+                <h4>Party Dress</h4>
+                <p>BDT-8,000</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

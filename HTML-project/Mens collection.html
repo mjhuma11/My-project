@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .men{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,auto));
+    padding: 5px;
+}
+        .product-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scales the card up by 5% */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a lift effect */
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2); /* Scales the heart icon on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="men">    
+    <div class="product-card">
+        <img src="image/shirt01.png" width="200px" height="300px" alt="Fancy Party Gown">
+        <div class="product-text"><h5>New</h5></div>
+        <div class="heart-icon"><i class='bx bx-heart'></i></div>
+        <div class="rating">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>New collection</h4>
+            <p>BDT-1499</p>
+        </div>
+    </div>    
+    <div class="product-card">
+        <img src="image/shirt.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+        <div class="product-text"><h5>New</h5></div>
+        <div class="heart-icon"><i class='bx bx-heart'></i></div>
+        <div class="rating">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Formal shirt</h4>
+            <p>BDT-2599</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="image/panjani01.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+        <div class="product-text"><h5>New</h5></div>
+        <div class="heart-icon"><i class='bx bx-heart'></i></div>
+        <div class="rating">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Premium soft cotton</h4>
+            <p>BDT-3500</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="image/panjabi.jpg" width="200px" height="300px" alt="Fancy Party Gown">
+        <div class="product-text"><h5>New</h5></div>
+        <div class="heart-icon"><i class='bx bx-heart'></i></div>
+        <div class="rating">
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bx-star'></i>
+            <i class='bx bxs-star-half'></i>
+        </div>
+        <div class="price">
+            <h4>Men's collection</h4>
+            <p>BDT-4000</p>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
